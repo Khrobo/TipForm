@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tip Calculator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" /> 
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>Tip Calculator</h1>
+            </div>
+            <div class="main-content">
+                <div class="notifications">
+                    <p class="bill-notif">Bill amount is blank</p>
+                    <p class="people-notif">Number of users must be greater than zero</p>
+                    <p class="quality-notif">Select a service</p>
+                </div>
+                <div class="input-btns">
+                    <form>
+                        <div class="bill-btn">
+                            <h3 style="margin-top: 0;">How much was your bill?</h3>
+                            <div class="sign">
+                                <i class="fas fa-dollar-sign"></i>
+                                <input type="number" name="pricing" id="bill" class="input-btn">
+                            </div>
+                            
+                        </div>
+                        <div class="people-btn">
+                            <h3>How many people sharing the bill?</h3>
+                            <div class="profile">
+                                <i class="fas fa-user-alt"></i>
+                                <input type="number" name="persons" id="people" class="input-btn">
+                            </div>
+                        </div>
+                        <div class="quality-btn">
+                            <h3>How was your service?</h3>
+                            <select name="service" id="quality" class="input-btn choice-btn">
+                                <option disabled selected>Choose...</option>
+                                <option value=".20">Great - 20%</option>
+                                <option value=".10">Good - 10%</option>
+                                <option value=".02">Bad - 2%</option>
+                            </select>
+                        </div>
+                        <div class="submit-btn">
+                            <input type="submit" value="Calculate" class="submit">
+                        </div>
+                        <div class="contain-sum">
+                            <img class="loading" src="Gear-0.4s-200px.svg">
+                            <p class="total appear"></p>
+                            <p class="tip appear"></p>
+                            <p class="amount appear"></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
+
+
+
+
