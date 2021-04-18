@@ -1,1 +1,1 @@
-# TipForm
+# Simple javascript project for practice
